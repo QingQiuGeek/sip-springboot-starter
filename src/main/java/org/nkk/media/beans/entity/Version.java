@@ -1,0 +1,17 @@
+package org.nkk.media.beans.entity;
+
+import com.alibaba.fastjson2.annotation.JSONField;
+import lombok.Data;
+
+@Data
+public class Version {
+
+    @JSONField(name = "buildTime")
+    private String buildTime;
+
+    @JSONField(name = "branchName")
+    private String branchName;
+
+    @JSONField(name = "commitHash")
+    private String commitHash;
+}

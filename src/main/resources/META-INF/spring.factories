@@ -1,0 +1,5 @@
+# ?????
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  org.nkk.sip.SipAutoConfiguration,\
+  org.nkk.media.MediaAutoConfiguration
+
