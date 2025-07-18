@@ -1,4 +1,5 @@
 ### 说明
+该拉流SDK与ZlmediaKit结合使用，可实现RTMP、RTSP、HLS、TS等多种格式视频流拉流。
 **该SDK适用于GB28181 2016协议**
 1. zlmedia必须开启鉴权，如果不开启，那么就算流推过来，mediaPlayInfo也没有播放的url。详见：org.nkk.sip.core.session.impl.InviteManager.processAuth
 2. 经测试，180路以下基本没问题，继续增加后就会出现拉流失败，这个纯代码的并发时序问题，与硬件无关。详见：org.nkk.media.hook.service.impl.DefaultZlmHookServiceImpl.onPublish
@@ -40,7 +41,7 @@ sip:
 
 #### 二、核心API
 > 封装了常用请求操作
-开发主要用sipMessageTemplate即可实现推拉流等操作
+开发主要用sipMessageTemplate即可实现视频流推拉流等操作
 #### 1.sip
 - sipMessageTemplate
 #### 2.zlmedia
