@@ -20,7 +20,7 @@ import org.nkk.sip.core.service.SipMessageTemplate;
 import org.nkk.sip.core.session.impl.InviteManager;
 import org.nkk.sip.core.session.impl.ProxyManager;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.Objects;
 
 /**
@@ -41,6 +41,11 @@ public class DefaultZlmHookServiceImpl implements ZlmHookService {
     private ProxyManager proxyManager;
 
     private final SipConfig.StreamConf streamConf;
+
+    public DefaultZlmHookServiceImpl() {
+        SipConfig sipConfig = SipContextHolder.getBean(SipConfig.class);
+        this.streamConf = sipConfig.getStream();
+    }
 
     public DefaultZlmHookServiceImpl(StreamConf streamConf) {
         SipConfig sipConfig = SipContextHolder.getBean(SipConfig.class);

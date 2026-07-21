@@ -19,7 +19,7 @@ import org.nkk.sip.core.builder.SipBuilder;
 import org.nkk.sip.core.service.SipPublisher;
 import org.nkk.sip.core.session.cache.SipCacheManager;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.Objects;
 
 /**

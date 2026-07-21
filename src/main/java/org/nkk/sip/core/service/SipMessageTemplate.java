@@ -38,7 +38,7 @@ import org.nkk.sip.core.session.impl.ProxyManager;
 import org.nkk.sip.utils.SipUtil;
 import org.nkk.sip.utils.XmlUtils;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import javax.sip.message.Request;
 import java.util.Date;
 import java.util.Objects;

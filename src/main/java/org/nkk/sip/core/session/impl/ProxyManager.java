@@ -12,7 +12,7 @@ import org.nkk.sip.config.SipConfig;
 import org.nkk.sip.core.service.SipPublisher;
 import org.nkk.sip.core.session.cache.SipCacheManager;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.Objects;
 
 @Slf4j

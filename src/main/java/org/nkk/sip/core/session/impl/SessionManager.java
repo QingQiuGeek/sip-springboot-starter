@@ -16,7 +16,7 @@ import org.nkk.sip.core.service.SipMessageTemplate;
 import org.nkk.sip.core.session.SipManager;
 import org.nkk.sip.core.session.cache.SipCacheManager;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * 设备登陆信息管理器

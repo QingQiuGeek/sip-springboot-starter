@@ -19,7 +19,7 @@ import org.nkk.sip.core.session.impl.SessionManager;
 import org.nkk.sip.utils.SipUtil;
 import org.nkk.sip.utils.XmlUtils;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import javax.sip.RequestEvent;
 import javax.sip.ResponseEvent;
 import javax.sip.address.Address;

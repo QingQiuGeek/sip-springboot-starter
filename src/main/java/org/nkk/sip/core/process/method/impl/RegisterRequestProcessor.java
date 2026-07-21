@@ -17,7 +17,7 @@ import org.nkk.sip.core.session.impl.SessionManager;
 import org.nkk.sip.utils.DigestAuthenticationHelper;
 import org.nkk.sip.utils.SipUtil;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import javax.sip.ListeningPoint;
 import javax.sip.RequestEvent;
 import javax.sip.ResponseEvent;
