@@ -40,7 +40,12 @@ public class DefaultZlmHookServiceImpl implements ZlmHookService {
     @Resource
     private ProxyManager proxyManager;
 
-    private final SipConfig.StreamConf streamConf;
+    private SipConfig.StreamConf streamConf;
+
+    public DefaultZlmHookServiceImpl() {
+        SipConfig sipConfig = SipContextHolder.getBean(SipConfig.class);
+        this.streamConf = sipConfig.getStream();
+    }
 
     public DefaultZlmHookServiceImpl(StreamConf streamConf) {
         SipConfig sipConfig = SipContextHolder.getBean(SipConfig.class);
