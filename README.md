@@ -61,10 +61,18 @@ mvn clean install -DskipTests
 ```xml
 <!-- 无需配置额外的仓库地址和认证，Maven 会自动从本地仓库加载。 -->
 
+<!-- Spring Boot 4.0.6 -->
 <dependency>
     <groupId>org.nkk</groupId>
     <artifactId>sip-springboot-starter</artifactId>
     <version>2.0-SNAPSHOT</version> 
+</dependency>
+
+<!-- Spring Boot 2.7.3 -->
+<dependency>
+    <groupId>org.nkk</groupId>
+    <artifactId>sip-springboot-starter</artifactId>
+    <version>1.0-SNAPSHOT</version> 
 </dependency>
 ```
 ---
