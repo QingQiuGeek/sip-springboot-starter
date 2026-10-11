@@ -33,10 +33,37 @@ mvn clean install -DskipTests
 在项目的 `pom.xml` 中添加：
 
 ```xml
+
+**配置额外的仓库地址**
+<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+</repositories>
+
+<dependency>
+	    <groupId>com.github.QingQiuGeek</groupId>
+	    <artifactId>sip-springboot-starter</artifactId>
+	    <version>v2.0</version>
+</dependency>
+```
+
+或
+
+```xml
+<!-- Spring Boot 2.7.3 -->
 <dependency>
     <groupId>org.nkk</groupId>
     <artifactId>sip-springboot-starter</artifactId>
-    <version>1.0-SNAPSHOT</version>  <!-- Spring Boot 2.7.3 -->
+    <version>1.0-SNAPSHOT</version>  
+</dependency>
+
+<!-- Spring Boot 4.0.6 -->
+<dependency>
+    <groupId>org.nkk</groupId>
+    <artifactId>sip-springboot-starter</artifactId>
+    <version>2.0-SNAPSHOT</version> 
 </dependency>
 ```
 
