@@ -33,8 +33,7 @@ mvn clean install -DskipTests
 在项目的 `pom.xml` 中添加：
 
 ```xml
-
-**配置额外的仓库地址**
+<!-- 配置额外的仓库地址 -->
 <repositories>
 		<repository>
 		    <id>jitpack.io</id>
@@ -42,33 +41,32 @@ mvn clean install -DskipTests
 		</repository>
 </repositories>
 
+<!-- Spring Boot 4.0.6 -->
 <dependency>
 	    <groupId>com.github.QingQiuGeek</groupId>
 	    <artifactId>sip-springboot-starter</artifactId>
 	    <version>v2.0</version>
+</dependency>
+
+<!-- Spring Boot 2.7.3 -->
+<dependency>
+	    <groupId>com.github.QingQiuGeek</groupId>
+	    <artifactId>sip-springboot-starter</artifactId>
+	    <version>v1.0</version>
 </dependency>
 ```
 
 或
 
 ```xml
-<!-- Spring Boot 2.7.3 -->
-<dependency>
-    <groupId>org.nkk</groupId>
-    <artifactId>sip-springboot-starter</artifactId>
-    <version>1.0-SNAPSHOT</version>  
-</dependency>
+<!-- 无需配置额外的仓库地址和认证，Maven 会自动从本地仓库加载。 -->
 
-<!-- Spring Boot 4.0.6 -->
 <dependency>
     <groupId>org.nkk</groupId>
     <artifactId>sip-springboot-starter</artifactId>
     <version>2.0-SNAPSHOT</version> 
 </dependency>
 ```
-
-**无需配置额外的仓库地址和认证，Maven 会自动从本地仓库加载。**
-
 ---
 
 ## 功能特性
